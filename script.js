@@ -26,5 +26,5 @@ function deleteThoughtsItem(){
 }
 
 function callAddItem(){
-    addItem();
+    addThoughtsItem();
 }
