@@ -1,0 +1,26 @@
+:root{
+    background: rgba(98, 109, 96, 0.3);
+}
+html{
+   background: rgba(98, 109, 96, 0.3);
+   margin: 0;
+   padding:0;
+}
+.content{
+    /* margin-right:2%;
+    margin-left:2%; */
+    background-color: rgba(54, 122, 190, 0.45);
+}
+.header{
+    padding: 5%;
+    /* margin:2%; */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(150,111,54,0.9220063025210083) 100%);
+}
+.input-container{
+    margin: 2%;
+}
+.lists{
+    margin:5px;
+    display: flex;
+}

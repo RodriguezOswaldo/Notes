@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Conference Notes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-<body>
-<div class="container">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">General Conference Thoughts</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-      </div>
 
-</div>    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Conference Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="header">
+      <header>
+        <h2>General Conference Lessons</h3>
+      </header>
+    </div>
+
+    <div class="lists">
+      <section class="col first-col">
+        <h4>Thoughts</h3>
+          <label for="thoughts">Thoughts: </label>
+          <input type="text" id="thoughts" class="text">
+          <button onclick="addThoughtsItem()" class="btn btn-add btn-outline-primary" id="btn-add" type="button">Add </button>
+          <button onclick="deleteThoughtsItem()" class="btn btn-add btn-outline-danger" id="btn-add" type="button">Delete
+          </button>
+          <ul id="thoughts-list">
+
+          </ul>
+      </section>
+      <section class="col second-col">
+        <h4>Blessings</h3>
+          <label for="thoughts">Blessings: </label>
+          <input type="text" id="blessings" class="control">
+          <button onclick="callAddItem()" class="btn btn-add btn-outline-primary" id="btn-add" type="button">Add </button>
+          <button onclick="deleteItem()" class="btn btn-add btn-outline-danger" id="btn-add" type="button">Delete
+          </button>
+          <ul id="blessings-list">
+
+          </ul>
+      </section>
+      <section class="col third-col">
+        <h4>Warnings</h3>
+          <label for="thoughts">Warnings: </label>
+          <input type="text" id="warnings" class="control">
+          <button onclick="callAddItem()" class="btn btn-add btn-outline-primary" id="btn-add" type="button">Add </button>
+          <button onclick="deleteItem()" class="btn btn-add btn-outline-danger" id="btn-add" type="button">Delete
+          </button>
+          <ul id="warnings-list">
+
+          </ul>
+      </section>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
