@@ -9,8 +9,8 @@ html{
 .content{
     /* margin-right:2%;
     margin-left:2%; */
-    background-color: rgba(54, 122, 190, 0.45);
-}
+    background: rgb(54,122,190);
+    background: linear-gradient(0deg, rgba(54,122,190,0.5755208333333333) 0%, rgba(54,147,150,0.9220063025210083) 100%);}
 .header{
     padding: 5%;
     /* margin:2%; */
