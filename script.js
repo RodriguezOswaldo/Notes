@@ -4,25 +4,39 @@ function addThoughtsItem(){
     let ul = document.getElementById('thoughts-list');
     let thoughts = document.getElementById('thoughts');
     let li = document.createElement('li');
+
     li.setAttribute('id', thoughts.value);
-    li.appendChild(document.createTextNode(thoughts.value));
-    ul.appendChild(li);
+    if (thoughts.value == ''){
+        alert('Cannot be empty')
+    }else{
+        li.appendChild(document.createTextNode(thoughts.value));
+        ul.appendChild(li);
+    }
+    
 }
 function addBlessingsItem(){
     let ul = document.getElementById('blessings-list');
     let blessings = document.getElementById('blessings');
     let li = document.createElement('li');
     li.setAttribute('id', blessings.value);
+    if (blessings.value == ''){
+        alert('Cannot be empty')
+    }else{
     li.appendChild(document.createTextNode(blessings.value));
     ul.appendChild(li);
+    }
 }
 function addWarningsItem(){
     let ul = document.getElementById('warnings-list');
     let warnings = document.getElementById('warnings');
     let li = document.createElement('li');
     li.setAttribute('id', warnings.value);
+    if (blessings.value == ''){
+        alert('Cannot be empty')
+    }else{
     li.appendChild(document.createTextNode(warnings.value));
     ul.appendChild(li);
+    }
 }
 
 warnings
